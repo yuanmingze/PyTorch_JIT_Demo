@@ -1,4 +1,12 @@
 {
+    "env": {
+        "myDefaultIncludePath": [
+            "${workspaceFolder}",
+            "${workspaceFolder}/cpp",
+            "/home/engs2369/miniconda3/envs/pytorch_1_8_2/lib/python3.8/site-packages/torch/include/"
+        ],
+        "myCompilerPath": "/usr/bin/gcc-7"
+    },
     "configurations": [
         {
             "name": "Win32",
@@ -15,7 +23,20 @@
             "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.31.31103/bin/Hostx64/x64/cl.exe",
             "cStandard": "c17",
             "cppStandard": "c++17",
-            "intelliSenseMode": "windows-msvc-x64"
+            "intelliSenseMode": "windows-msvc-x64",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        },
+        {
+            "name": "Linux",
+            "intelliSenseMode": "clang-x64",
+            "defines": [],
+            "includePath": [
+                "${myDefaultIncludePath}"
+            ],
+            "compilerPath": "/usr/bin/gcc-9",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "configurationProvider": "ms-vscode.cmake-tools"
         }
     ],
     "version": 4

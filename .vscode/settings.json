@@ -1,23 +1,23 @@
 {
-    // Windows configurtion
-    // "python.pythonPath": "/mnt/sda1/workenv_linux_ubuntu_20_04/python3_8_360opticalflow/bin/python",
-    // "python.linting.pylintPath": "D:/workenv_windows/python_3_8_canfield/Scripts/pylint.exe",
-    // "python.formatting.autopep8Path": "D:/workenv_windows/python_3_8_canfield/Scripts/autopep8.exe",
-    // Linux configurtion
-    // "ltex.java.path": "/usr/bin/java",
-    // "python.pythonPath": "/mnt/sda1/workenv/python_3_8_facenet/bin/python",
-    // "python.linting.pylintPath": "/mnt/sda1/workenv/python_3_8_facenet/bin/pylint",
-    // "python.formatting.autopep8Path": "/mnt/sda1/workenv/python_3_8_facenet/bin/autopep8",
-    //
-    // python settting
-    "python.pythonPath": "D:/workenv_windows/python_3_9_torch/Scripts/python.exe",
-    "python.linting.pylintPath": "D:/workenv_windows/python_3_9_torch/Scripts/pylint.exe",
-    "python.languageServer": "Pylance",
+    // --------- Linux configurtion  ---------
+    "python.pythonPath": "/home/engs2369/miniconda3/envs/pytorch_1_8_2/bin/python",
+    "python.linting.pylintPath": "/home/engs2369/miniconda3/envs/pytorch_1_8_2/bin/pylint",
+    "python.formatting.autopep8Path": "/home/engs2369/miniconda3/envs/pytorch_1_8_2/bin/autopep8",
     "python.analysis.extraPaths": [
         "${workspaceFolder}/src",
-        // "/mnt/sda1/workenv/python_3_8_facenet/lib/python3.8/site-packages",
-        "D:/workenv_windows/python_3_9_torch/Lib/site-packages/",
+        "/home/engs2369/miniconda3/envs/pytorch_1_8_2/lib/python3.8/site-packages/",
     ],
+    "ltex.java.path": "/usr/bin/java",
+    // --------- Windows configurtion  ---------
+    // "python.pythonPath": "D:/workenv_windows/python_3_9_torch/Scripts/python.exe",
+    // "python.linting.pylintPath": "D:/workenv_windows/python_3_9_torch/Scripts/pylint.exe",
+    // "python.analysis.extraPaths": [
+    //     "${workspaceFolder}/src",
+    //     // "/mnt/sda1/workenv/python_3_8_facenet/lib/python3.8/site-packages",
+    //     "D:/workenv_windows/python_3_9_torch/Lib/site-packages/",
+    // ],
+    //  -------------------
+    "python.languageServer": "Pylance",
     "python.analysis.completeFunctionParens": true,
     "python.terminal.activateEnvironment": true,
     "python.formatting.provider": "autopep8",
@@ -26,7 +26,7 @@
         "--experimental"
     ],
     "python.autoComplete.extraPaths": [
-        "${workspaceFolder}/src"
+        "${workspaceFolder}/python"
     ],
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
@@ -37,5 +37,6 @@
         "${workspaceFolder}/.vscode/pylintrc"
     ],
     // cmake
-    "cmake.configureOnOpen": false
+    "cmake.configureOnOpen": false,
+    "cmake.sourceDirectory": "${workspaceFolder}/cpp"
 }

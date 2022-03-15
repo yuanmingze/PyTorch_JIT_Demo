@@ -1,0 +1,41 @@
+{
+    // Windows configurtion
+    // "python.pythonPath": "/mnt/sda1/workenv_linux_ubuntu_20_04/python3_8_360opticalflow/bin/python",
+    // "python.linting.pylintPath": "D:/workenv_windows/python_3_8_canfield/Scripts/pylint.exe",
+    // "python.formatting.autopep8Path": "D:/workenv_windows/python_3_8_canfield/Scripts/autopep8.exe",
+    // Linux configurtion
+    // "ltex.java.path": "/usr/bin/java",
+    // "python.pythonPath": "/mnt/sda1/workenv/python_3_8_facenet/bin/python",
+    // "python.linting.pylintPath": "/mnt/sda1/workenv/python_3_8_facenet/bin/pylint",
+    // "python.formatting.autopep8Path": "/mnt/sda1/workenv/python_3_8_facenet/bin/autopep8",
+    //
+    // python settting
+    "python.pythonPath": "D:/workenv_windows/python_3_9_torch/Scripts/python.exe",
+    "python.linting.pylintPath": "D:/workenv_windows/python_3_9_torch/Scripts/pylint.exe",
+    "python.languageServer": "Pylance",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/src",
+        // "/mnt/sda1/workenv/python_3_8_facenet/lib/python3.8/site-packages",
+        "D:/workenv_windows/python_3_9_torch/Lib/site-packages/",
+    ],
+    "python.analysis.completeFunctionParens": true,
+    "python.terminal.activateEnvironment": true,
+    "python.formatting.provider": "autopep8",
+    "python.formatting.autopep8Args": [
+        "--max-line-length=200",
+        "--experimental"
+    ],
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}/src"
+    ],
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintCategorySeverity.convention": "Information",
+    "python.linting.pylintArgs": [
+        "--list-msgs",
+        "--rcfile",
+        "${workspaceFolder}/.vscode/pylintrc"
+    ],
+    // cmake
+    "cmake.configureOnOpen": false
+}

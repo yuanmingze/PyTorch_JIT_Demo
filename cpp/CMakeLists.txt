@@ -22,3 +22,6 @@ target_link_libraries(test_02_script "${TORCH_LIBRARIES}")
 
 add_executable(test_02_trace test_02_trace.cpp)
 target_link_libraries(test_02_trace "${TORCH_LIBRARIES}")
+
+add_executable(test_03 test_03.cpp)
+target_link_libraries(test_03 "${TORCH_LIBRARIES}")
